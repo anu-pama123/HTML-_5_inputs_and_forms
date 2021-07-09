@@ -68,15 +68,15 @@
             else textError.textContent = "Name is incorrect";    
         });
 
-        // //email validation
-        // const email = document.querySelector('#email');
-        // const emailError = document.querySelector('.email-error');
-        // email.addEventListener('input', function() {
-        //     let emailRegex = RegExp('^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.][a-zA-Z]{2,3}){1,2}$');
-        //     if (emailRegex.test(email.value))
-        //         emailError.textContent = "";
-        //     else emailError.textContent = "Email is incorrect";    
-        // });
+        //email validation
+        const email = document.querySelector('#email');
+        const emailError = document.querySelector('.email-error');
+        email.addEventListener('input', function() {
+            let emailRegex = RegExp('^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.][a-zA-Z]{2,3}){1,2}$');
+            if (emailRegex.test(email.value))
+                emailError.textContent = "";
+            else emailError.textContent = "Email is incorrect";    
+        });
 
         // //telephone validation
         // const tel = document.querySelector('#tel');
